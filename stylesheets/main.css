@@ -92,3 +92,11 @@ ul.page-links li a:hover {
   width: 30%;
   margin: 5vh auto;
 }
+
+/* line 3, ../sass/parts/_contact.sass */
+#heading1.panel-heading,
+#heading2.panel-heading,
+#heading3.panel-heading {
+  background: #555;
+  color: #f8f8f8;
+}

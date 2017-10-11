@@ -11,6 +11,9 @@
 
   <title>Scroll 1</title>
 
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -79,7 +82,8 @@
         </div>
         <div class="intro-pic">
           <img class="img-responsive" src="./img/streetbattle-1.png" alt="">
-        </div><!-- /intro-pic END -->
+        </div>
+        <!-- /intro-pic END -->
         <h3>Watch the magic happen!!!!!</h3>
       </div>
     </div>
@@ -110,7 +114,8 @@
     </div>
     <div class="car-1">
       <img class="img-responsive" src="./img/car-1.png" alt="">
-    </div><!-- /car-1 END -->
+    </div>
+    <!-- /car-1 END -->
   </section>
 
   <!-- Services Section -->
@@ -127,9 +132,58 @@
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Contact Section</h1>
+      <h1>Contact Section</h1>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="heading1">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    Locate Me
+                </a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body">
+              <ul id="contact-list">
+                <li><a href="">1234 Bellemeade Ave.</a></li>
+                <li><a href="">Evansville Indiana 47713</a></li>
+                <li><a href="">812-123-4567</a></li>
+                <li><a href="">bigmic69@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="heading2">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    Google Map
+                </a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50337.9429169152!2d-87.59620283431649!3d37.95095051659795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88702aafdb5837cf%3A0x18aaf05ebe8a9675!2sEvansville%2C+IN+47713!5e0!3m2!1sen!2sus!4v1507738751751"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="heading3">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    Social Network
+                </a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-tumblr"></a>
+              <a href="#" class="fa fa-pinterest"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
