@@ -4,3 +4,91 @@
 /*---------- MARGIN/PADDING ---------- */
 /*---------- CONTAINER ---------- */
 /*---------- TRANSITIONS ---------- */
+/* line 1, ../sass/parts/_base.sass */
+body {
+  background: #555 !important;
+}
+
+/* line 4, ../sass/parts/_base.sass */
+h1 {
+  padding-bottom: 1em !important;
+}
+
+/* line 1, ../sass/parts/_intro.sass */
+.intro-pic {
+  width: 80%;
+  height: auto;
+  margin: 2vh auto;
+}
+/* line 5, ../sass/parts/_intro.sass */
+.intro-pic img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 1s ease 0.05s;
+}
+/* line 9, ../sass/parts/_intro.sass */
+.intro-pic img:hover {
+  box-shadow: 2px 2px 4px #fff;
+  transform: scale(1.1);
+  transform-origin: top;
+}
+
+/* line 15, ../sass/parts/_intro.sass */
+.scroll-btn {
+  margin: 2vh auto;
+}
+/* line 17, ../sass/parts/_intro.sass */
+.scroll-btn:hover {
+  background: #444 !important;
+  color: #f3f3f3 !important;
+}
+
+/* line 1, ../sass/parts/_about.sass */
+ul.page-links {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  padding: 0 !important;
+}
+@media (min-width: 520px) {
+  /* line 1, ../sass/parts/_about.sass */
+  ul.page-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 769px) {
+  /* line 1, ../sass/parts/_about.sass */
+  ul.page-links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* line 11, ../sass/parts/_about.sass */
+ul.page-links li {
+  grid-column: span 1;
+  display: flex;
+  list-style-type: none;
+}
+/* line 15, ../sass/parts/_about.sass */
+ul.page-links li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #f3f3f3 !important;
+  background: #333;
+  border-radius: 10px;
+  line-height: 2.5em;
+}
+/* line 23, ../sass/parts/_about.sass */
+ul.page-links li a:hover {
+  font-weight: 600;
+  color: #333 !important;
+  background: #777;
+  text-decoration: none;
+}
+
+/* line 29, ../sass/parts/_about.sass */
+.car-1 {
+  width: 30%;
+  margin: 5vh auto;
+}

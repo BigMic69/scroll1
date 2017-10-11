@@ -1,0 +1,31 @@
+ul.page-links
+  display: grid
+  grid-gap: 10px
+  grid-template-columns: 1fr
+  list-style-type: none
+  padding: 0 !important
+  @media (min-width: 520px)
+    grid-template-columns: 1fr 1fr
+  @media (min-width: 769px)
+    grid-template-columns: 1fr 1fr 1fr 1fr
+  li
+    grid-column: span 1
+    display: flex
+    list-style-type: none
+    a
+      width: 100%
+      height: 100%
+      display: block
+      color: #f3f3f3 !important
+      background: #333
+      border-radius: 10px
+      line-height: 2.5em
+      &:hover
+        font-weight: 600
+        color: #333 !important
+        background: #777
+        text-decoration: none
+
+.car-1
+  width: 30%
+  margin: 5vh auto
