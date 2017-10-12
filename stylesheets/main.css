@@ -14,6 +14,17 @@ h1 {
   padding-bottom: 1em !important;
 }
 
+/* line 8, ../sass/parts/_base.sass */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 12, ../sass/parts/_base.sass */
+footer p {
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px #f9f9f9;
+}
+
 /* line 1, ../sass/parts/_intro.sass */
 .intro-pic {
   width: 80%;
@@ -46,7 +57,7 @@ h1 {
 /* line 1, ../sass/parts/_about.sass */
 ul.page-links {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: 1fr;
   list-style-type: none;
   padding: 0 !important;
@@ -90,13 +101,45 @@ ul.page-links li a:hover {
 /* line 29, ../sass/parts/_about.sass */
 .car-1 {
   width: 30%;
-  margin: 5vh auto;
+  margin: 30px auto !important;
 }
 
-/* line 3, ../sass/parts/_contact.sass */
+/* line 1, ../sass/parts/_contact.sass */
+#accordion {
+  margin: 10vh 0;
+  border: 1px solid #666;
+}
+
+/* line 5, ../sass/parts/_contact.sass */
 #heading1.panel-heading,
 #heading2.panel-heading,
 #heading3.panel-heading {
   background: #555;
   color: #f8f8f8;
+}
+
+/* line 11, ../sass/parts/_contact.sass */
+.social {
+  margin: 0 5px;
+  font-size: 40px;
+  color: #55d2ff;
+  text-shadow: 0.5px 0.5px 1px #444;
+}
+
+/* line 17, ../sass/parts/_contact.sass */
+.contact-container {
+  width: 50%;
+  margin: 0 auto 20px;
+  padding: 0.5vh !important;
+  background: #999;
+}
+/* line 22, ../sass/parts/_contact.sass */
+.contact-container a {
+  display: flex;
+  font-size: 1.125em;
+  font-weight: 500;
+  justify-content: center;
+  color: #63d6ff;
+  background: #444;
+  text-shadow: 0.5px 0.5px 1px #f8f8f8;
 }
