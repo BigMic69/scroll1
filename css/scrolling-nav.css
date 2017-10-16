@@ -55,6 +55,10 @@ of those sections to manage the look and feel of the site. */
   text-align: center;
   //background: #fff;
   color: #fff;
+  //background-image: url(../img/wp-warehouse.png);
+  //background-size: contain;
+  //background-position: center;
+  //background-repeat: no-repeat;
 }
 .contact-section {
   min-height: 100%;

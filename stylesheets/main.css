@@ -104,6 +104,21 @@ ul.page-links li a:hover {
   margin: 30px auto !important;
 }
 
+/* line 1, ../sass/parts/_services.sass */
+.card-1 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* line 3, ../sass/parts/_services.sass */
+.card-1 img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
 /* line 1, ../sass/parts/_contact.sass */
 #accordion {
   margin: 10vh 0;
@@ -128,7 +143,7 @@ ul.page-links li a:hover {
 
 /* line 17, ../sass/parts/_contact.sass */
 .contact-container {
-  width: 50%;
+  width: 100%;
   margin: 0 auto 20px;
   padding: 0.5vh !important;
   background: #999;
@@ -139,7 +154,7 @@ ul.page-links li a:hover {
   font-size: 1.125em;
   font-weight: 500;
   justify-content: center;
-  color: #63d6ff;
+  color: #e7e7e7;
   background: #444;
-  text-shadow: 0.5px 0.5px 1px #f8f8f8;
+  text-shadow: 0.5px 0.5px 1px #2e3af0;
 }
