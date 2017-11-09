@@ -1,30 +1,40 @@
-ul.page-links
+.page-links
+  background-image: url('/img/car-1.png')
+  background-size: cover
+  background-position: center center
+  filter: grayscale(90%)
   display: grid
-  grid-gap: 20px
+  grid-gap: 10px
   grid-template-columns: 1fr
   list-style-type: none
-  padding: 0 !important
+  padding: 5em 1em !important
+  li
+    width: 100%
+    grid-column: 1 span
+    +no-cush
+    list-style-type: none
+    a
+      width: 80%
+      //height: 100%
+      margin: 0 auto
+      //padding: 5px 10px
+      display: flex
+      justify-content: center
+      color: #f3f3f3 !important
+      background: #333
+      border: 1px solid #e9e9e9
+      border-radius: 10px
+      line-height: 2.5em
+      font-weight: 600
+      +trans-0
+      &:hover
+        color: #333 !important
+        background: #999
+        text-decoration: none
   @media (min-width: 520px)
     grid-template-columns: 1fr 1fr
   @media (min-width: 769px)
     grid-template-columns: 1fr 1fr 1fr 1fr
-  li
-    grid-column: span 1
-    display: flex
-    list-style-type: none
-    a
-      width: 100%
-      height: 100%
-      display: block
-      color: #f3f3f3 !important
-      background: #333
-      border-radius: 10px
-      line-height: 2.5em
-      &:hover
-        font-weight: 600
-        color: #333 !important
-        background: #777
-        text-decoration: none
 
 .car-1
   width: 30%

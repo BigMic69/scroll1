@@ -5,21 +5,29 @@
 /*---------- CONTAINER ---------- */
 /*---------- TRANSITIONS ---------- */
 /* line 1, ../sass/parts/_base.sass */
+* {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/parts/_base.sass */
 body {
   background: #555 !important;
 }
 
-/* line 4, ../sass/parts/_base.sass */
+/* line 8, ../sass/parts/_base.sass */
 h1 {
   padding-bottom: 1em !important;
 }
 
-/* line 8, ../sass/parts/_base.sass */
+/* line 12, ../sass/parts/_base.sass */
 a:hover {
   text-decoration: none !important;
 }
 
-/* line 12, ../sass/parts/_base.sass */
+/* line 16, ../sass/parts/_base.sass */
 footer p {
   text-align: center;
   text-shadow: 0.5px 0.5px 1px #f9f9f9;
@@ -35,7 +43,7 @@ footer p {
 .intro-pic img {
   width: 100%;
   border-radius: 10px;
-  transition: 1s ease 0.05s;
+  transition: 0.8s ease 0.05s;
 }
 /* line 9, ../sass/parts/_intro.sass */
 .intro-pic img:hover {
@@ -55,73 +63,125 @@ footer p {
 }
 
 /* line 1, ../sass/parts/_about.sass */
-ul.page-links {
+.page-links {
+  background-image: url("/img/car-1.png");
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(90%);
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
   list-style-type: none;
-  padding: 0 !important;
+  padding: 5em 1em !important;
+}
+/* line 11, ../sass/parts/_about.sass */
+.page-links li {
+  width: 100%;
+  grid-column: 1 span;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+/* line 16, ../sass/parts/_about.sass */
+.page-links li a {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: #f3f3f3 !important;
+  background: #333;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  line-height: 2.5em;
+  font-weight: 600;
+  transition: 0.3s ease 0.05s;
+}
+/* line 30, ../sass/parts/_about.sass */
+.page-links li a:hover {
+  color: #333 !important;
+  background: #999;
+  text-decoration: none;
 }
 @media (min-width: 520px) {
   /* line 1, ../sass/parts/_about.sass */
-  ul.page-links {
+  .page-links {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 769px) {
   /* line 1, ../sass/parts/_about.sass */
-  ul.page-links {
+  .page-links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-/* line 11, ../sass/parts/_about.sass */
-ul.page-links li {
-  grid-column: span 1;
-  display: flex;
-  list-style-type: none;
-}
-/* line 15, ../sass/parts/_about.sass */
-ul.page-links li a {
-  width: 100%;
-  height: 100%;
-  display: block;
-  color: #f3f3f3 !important;
-  background: #333;
-  border-radius: 10px;
-  line-height: 2.5em;
-}
-/* line 23, ../sass/parts/_about.sass */
-ul.page-links li a:hover {
-  font-weight: 600;
-  color: #333 !important;
-  background: #777;
-  text-decoration: none;
-}
 
-/* line 29, ../sass/parts/_about.sass */
+/* line 39, ../sass/parts/_about.sass */
 .car-1 {
   width: 30%;
   margin: 30px auto !important;
 }
 
 /* line 1, ../sass/parts/_services.sass */
-.card-1 {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#services {
+  background-image: url("/img/carbon-fiber.png");
+  background-position: center top;
+  background-size: auto 100vh;
+  display: grid;
+  grid-gap: 10px;
+  padding: 2em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
 }
-/* line 3, ../sass/parts/_services.sass */
-.card-1 img {
+/* line 11, ../sass/parts/_services.sass */
+#services h1 {
+  grid-column: 4 span;
+  color: #fff;
+}
+/* line 14, ../sass/parts/_services.sass */
+#services .card-1 {
+  grid-column: 4 span;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #999;
+  background: #444;
+}
+/* line 20, ../sass/parts/_services.sass */
+#services .card-1 img {
   width: 90%;
   margin: 0 auto;
+  align-items: center;
   border-radius: 20px;
+}
+@media (min-width: 769px) {
+  /* line 20, ../sass/parts/_services.sass */
+  #services .card-1 img {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 20, ../sass/parts/_services.sass */
+  #services .card-1 img {
+    width: 40%;
+  }
+}
+/* line 29, ../sass/parts/_services.sass */
+#services p {
+  grid-column: 2 span;
+  padding: 5px;
+  background: #e8e8e8;
+  border: thin solid #333;
+}
+@media (max-width: 768px) {
+  /* line 29, ../sass/parts/_services.sass */
+  #services p {
+    grid-column: 4 span;
+  }
 }
 
 /* line 1, ../sass/parts/_contact.sass */
 #accordion {
-  margin: 10vh 0;
+  margin: 10vh 20%;
   border: 1px solid #666;
 }
 
@@ -143,18 +203,22 @@ ul.page-links li a:hover {
 
 /* line 17, ../sass/parts/_contact.sass */
 .contact-container {
-  width: 100%;
-  margin: 0 auto 20px;
-  padding: 0.5vh !important;
-  background: #999;
+  margin: 0 25% 20px;
 }
-/* line 22, ../sass/parts/_contact.sass */
+/* line 20, ../sass/parts/_contact.sass */
 .contact-container a {
   display: flex;
+  padding: 1em !important;
   font-size: 1.125em;
   font-weight: 500;
   justify-content: center;
+  border-radius: 8px;
   color: #e7e7e7;
   background: #444;
-  text-shadow: 0.5px 0.5px 1px #2e3af0;
+  text-shadow: 0.5px 0.5px 1px #4be712;
+}
+/* line 30, ../sass/parts/_contact.sass */
+.contact-container a:hover {
+  color: #333;
+  background-color: #e3e3e3;
 }

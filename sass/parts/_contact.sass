@@ -1,5 +1,5 @@
 #accordion
-  margin: 10vh 0
+  margin: 10vh 20%
   border: 1px solid #666
 
 #heading1.panel-heading,
@@ -15,15 +15,18 @@
   text-shadow: .5px .5px 1px #444
 
 .contact-container
-  width: 100%
-  margin: 0 auto 20px
-  padding: .5vh !important
-  background: #999
+  //width: 300px
+  margin: 0 25% 20px
   a
     display: flex
+    padding: 1em !important
     font-size: 1.125em
     font-weight: 500
     justify-content: center
+    border-radius: 8px
     color: #e7e7e7
     background: #444
-    text-shadow: .5px .5px 1px #2e3af0
+    text-shadow: .5px .5px 1px $clr-primary
+    &:hover
+      color: #333
+      background-color: #e3e3e3

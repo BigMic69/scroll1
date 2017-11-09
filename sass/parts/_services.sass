@@ -1,6 +1,35 @@
-.card-1
-  +box-fluid
-  img
-    width: 90%
-    margin: 0 auto
-    +b-rad(20px)
+#services
+  //background-image: url(../img/wp-blue-ice.png)
+  background-image: url('/img/carbon-fiber.png')
+  background-position: center top
+  background-size: auto 100vh
+  display: grid
+  grid-gap: 10px
+  padding: 2em
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: auto
+  h1
+    grid-column: 4 span
+    color: #fff
+  .card-1
+    grid-column: 4 span
+    height: auto
+    padding: 10px
+    border: 1px solid #999
+    background: #444
+    img
+      width: 90%
+      margin: 0 auto
+      align-items: center
+      +b-rad(20px)
+      @media (min-width: 769px)
+        width: 60%
+      @media (min-width: 1024px)
+        width: 40%
+  p
+    grid-column: 2 span
+    padding: 5px
+    background: #e8e8e8
+    border: thin solid #333
+    @media (max-width: 768px)
+      grid-column: 4 span
