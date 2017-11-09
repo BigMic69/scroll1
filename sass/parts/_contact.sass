@@ -1,6 +1,20 @@
 #accordion
   margin: 10vh 20%
-  border: 1px solid #666
+
+.panel-heading
+  +no-cush
+  .panel-title
+    +no-cush
+    a
+      display: flex
+      padding: 5px 0 5px 1em
+      text-decoration: none
+      font-size: 1.25em
+      +trans-0
+      &:hover
+        background: #cfcfcf
+        color: #333
+        padding-left: 2em
 
 #heading1.panel-heading,
 #heading2.panel-heading,
@@ -8,11 +22,32 @@
   background: #555
   color: #f8f8f8
 
-.social
-  margin: 0 5px
-  font-size: 40px
-  color: #55d2ff
-  text-shadow: .5px .5px 1px #444
+.panel-body
+  background: #e4e0e0
+
+#contact-list
+  li
+    +menu-style
+
+iframe
+  width: 100%
+
+.social-container
+  display: grid
+  grid-gap: 5px
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: auto
+  .social
+    grid-row: 1 span
+    //margin: 0 5px
+    font-size: 2em
+    color: #55d2ff
+    text-shadow: .5px .5px 1px #444
+    +trans-0
+    &:hover
+      transform: scale(1.1)
+      box-shadow: 1px 1px 5px #444
+      border: thin solid #333
 
 .contact-container
   //width: 300px
@@ -26,7 +61,10 @@
     border-radius: 8px
     color: #e7e7e7
     background: #444
-    text-shadow: .5px .5px 1px $clr-primary
+    border: thin solid #e8e8e8
+    text-shadow: .5px .5px 1px $clr-alternate
+    +trans-0
     &:hover
       color: #333
-      background-color: #e3e3e3
+      background-color: #cfcfcf
+      border: thin solid #333
