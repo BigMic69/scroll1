@@ -1,5 +1,9 @@
 #accordion
+  width: 60%
   margin: 10vh 20%
+  @media (max-width: 700px)
+    width: 90%
+    margin: 10vh 5%
 
 .panel-heading
   +no-cush
@@ -52,6 +56,8 @@ iframe
 .contact-container
   //width: 300px
   margin: 0 25% 20px
+  @media (max-width: 700px)
+    margin: 0 10% 20px
   a
     display: flex
     padding: 1em !important

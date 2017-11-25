@@ -198,22 +198,30 @@ footer p {
 
 /* line 1, ../sass/parts/_contact.sass */
 #accordion {
+  width: 60%;
   margin: 10vh 20%;
 }
+@media (max-width: 700px) {
+  /* line 1, ../sass/parts/_contact.sass */
+  #accordion {
+    width: 90%;
+    margin: 10vh 5%;
+  }
+}
 
-/* line 4, ../sass/parts/_contact.sass */
+/* line 8, ../sass/parts/_contact.sass */
 .panel-heading {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
-/* line 6, ../sass/parts/_contact.sass */
+/* line 10, ../sass/parts/_contact.sass */
 .panel-heading .panel-title {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
-/* line 8, ../sass/parts/_contact.sass */
+/* line 12, ../sass/parts/_contact.sass */
 .panel-heading .panel-title a {
   display: flex;
   padding: 5px 0 5px 1em;
@@ -221,14 +229,14 @@ footer p {
   font-size: 1.25em;
   transition: 0.3s ease 0.05s;
 }
-/* line 14, ../sass/parts/_contact.sass */
+/* line 18, ../sass/parts/_contact.sass */
 .panel-heading .panel-title a:hover {
   background: #cfcfcf;
   color: #333;
   padding-left: 2em;
 }
 
-/* line 19, ../sass/parts/_contact.sass */
+/* line 23, ../sass/parts/_contact.sass */
 #heading1.panel-heading,
 #heading2.panel-heading,
 #heading3.panel-heading {
@@ -236,12 +244,12 @@ footer p {
   color: #f8f8f8;
 }
 
-/* line 25, ../sass/parts/_contact.sass */
+/* line 29, ../sass/parts/_contact.sass */
 .panel-body {
   background: #e4e0e0;
 }
 
-/* line 29, ../sass/parts/_contact.sass */
+/* line 33, ../sass/parts/_contact.sass */
 #contact-list li {
   margin: 0 auto;
   padding: 0;
@@ -250,19 +258,19 @@ footer p {
   text-decoration: none;
 }
 
-/* line 32, ../sass/parts/_contact.sass */
+/* line 36, ../sass/parts/_contact.sass */
 iframe {
   width: 100%;
 }
 
-/* line 35, ../sass/parts/_contact.sass */
+/* line 39, ../sass/parts/_contact.sass */
 .social-container {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
-/* line 40, ../sass/parts/_contact.sass */
+/* line 44, ../sass/parts/_contact.sass */
 .social-container .social {
   grid-row: 1 span;
   font-size: 2em;
@@ -270,18 +278,24 @@ iframe {
   text-shadow: 0.5px 0.5px 1px #444;
   transition: 0.3s ease 0.05s;
 }
-/* line 47, ../sass/parts/_contact.sass */
+/* line 51, ../sass/parts/_contact.sass */
 .social-container .social:hover {
   transform: scale(1.1);
   box-shadow: 1px 1px 5px #444;
   border: thin solid #333;
 }
 
-/* line 52, ../sass/parts/_contact.sass */
+/* line 56, ../sass/parts/_contact.sass */
 .contact-container {
   margin: 0 25% 20px;
 }
-/* line 55, ../sass/parts/_contact.sass */
+@media (max-width: 700px) {
+  /* line 56, ../sass/parts/_contact.sass */
+  .contact-container {
+    margin: 0 10% 20px;
+  }
+}
+/* line 61, ../sass/parts/_contact.sass */
 .contact-container a {
   display: flex;
   padding: 1em !important;
@@ -295,7 +309,7 @@ iframe {
   text-shadow: 0.5px 0.5px 1px #6c6b6a;
   transition: 0.3s ease 0.05s;
 }
-/* line 67, ../sass/parts/_contact.sass */
+/* line 73, ../sass/parts/_contact.sass */
 .contact-container a:hover {
   color: #333;
   background-color: #cfcfcf;
